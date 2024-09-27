@@ -1,44 +1,48 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../styles/Gallerypage.css';
-import img1 from '../assets/images/HK_Flag.png'
-import img2 from '../assets/images/acghk.png'
-import img3 from '../assets/images/bluelock.png'
+import img1 from '../assets/images/HK_Flag.png';
+import img2 from '../assets/images/acghk.png';
+import img3 from '../assets/images/bluelock.png';
+import img4 from '../assets/images/hkambience1.jpg';
+import img5 from '../assets/images/hkambience2.jpg';
+
 
 const images = [
-    { src: img1, info: 'Infos zum Bild 1' },
-    { src: img1, info: 'Infos zum Bild 2' },
-    { src: img2, info: 'Infos zum Bild 3' },
-    { src: img3, info: 'Infos zum Bild 4' },
-    { src: 'path/to/image5.jpg', info: 'Infos zum Bild 5' },
+    { src: img1, info: 'Explore the Vibrant Culture of Hong Kong' },
+    { src: img2, info: 'ACGHK 2024' },
+    { src: img3, info: 'Bluelock: The Ultimate Soccer Challenge' },
+    { src: img4, info: 'Explore the Vibrant Culture of Hong Kong' },
+    { src: img5, info: 'View from above' },
+    { src: img3, info: 'Bluelock: The Ultimate Soccer Challenge' }
+];
 
-  ];
-  
-  const Gallerypage = () => {
+const GalleryPage = () => {
+    const galleryRef = useRef(null);
+
+    useEffect(() => {
+        const scrollInterval = setInterval(() => {
+            if (galleryRef.current) {
+                galleryRef.current.scrollBy({ left: 0.3, behavior: 'smooth' });
+            }
+        }, 20);
+        return () => clearInterval(scrollInterval);
+    }, []);
+
     return (
-      <div className="gallery-container">
-        <div className="gallery-header">
-          <h1 className="gallery-title">HK Gallery</h1>
+        <div className="gallery-container">
+            <h1 className="gallery-title">HK Gallery</h1>
+            <div ref={galleryRef} className="gallery">
+                {images.map((image, index) => (
+                    <div key={index} className="gallery-item">
+                        <img src={image.src} alt={`Gallery image ${index + 1}`} className="gallery-img" />
+                        <div className="gallery-info">
+                            <p>{image.info}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
-  
-        <div className="gallery-wrapper">
-          <button className="scroll-button left-0" onClick={() => scrollGallery(-300)}>◀</button>
-          <div className="gallery-content">
-            {images.map((image, index) => (
-              <div key={index} className={`gallery-item gallery-item-${index}`}>
-                <img src={image.src} alt={`Gallery image ${index + 1}`} />
-                <p className="image-info">{image.info}</p>
-              </div>
-            ))}
-          </div>
-          <button className="scroll-button right-0" onClick={() => scrollGallery(300)}>▶</button>
-        </div>
-      </div>
     );
-  };
-  
-  function scrollGallery(amount) {
-    const gallery = document.querySelector('.gallery-content');
-    gallery.scrollBy({ left: amount, behavior: 'smooth' });
-  }
+};
 
-export default Gallerypage;
+export default GalleryPage;
