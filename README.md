@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# HK Gallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Projektübersicht
 
-## Available Scripts
+Dieses Projekt ist eine webbasierte Galerie namens **HK Gallery**, die eine Sammlung von Bildern, Videos und Animationen zeigt. Das Layout ist in verschiedene Abschnitte unterteilt, die jeweils einen anderen Medientyp hervorheben. Die Website ermöglicht es den Nutzern, interaktiv durch Bild-, Video- und Animationsgalerien zu navigieren.
 
-In the project directory, you can run:
+## Wireframe-Übersicht
 
-### `npm start`
+Das Wireframe bietet einen strukturierten visuellen Überblick über das Layout der Website. Es enthält folgende Abschnitte:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Startseite**: Der Ausgangspunkt der Website, mit Buttons, die den Benutzer zu verschiedenen Galerien führen.
+    - **Galerie**
+    - **Video**
+    - **Animation**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Animationsabschnitt**: Eine Karussell-artige Anzeige, die verschiedene Animationen zeigt.
+    - Nutzer können mit Pfeiltasten (links und rechts) durch die Animationen navigieren.
 
-### `npm test`
+3. **Bildergalerie**: Zeigt Bilder in einem durchscrollbaren Galerielayout.
+    - Nutzer können durch Bilder scrollen, die als Bild 1, Bild 2, Bild 3 usw. gekennzeichnet sind.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Videogalerie**: Eine durchscrollbare Galerie von Videos.
+    - Nutzer können durch Videos scrollen, die als Video 1, Video 2 usw. gekennzeichnet sind.
 
-### `npm run build`
+### Wireframe-Bild
+![Wireframe](./assets/wireframe-image.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Funktionen
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Navigation auf der Startseite**: 
+  - Die Startseite enthält drei Hauptoptionen, um zur gewünschten Galerie zu navigieren (Bilder, Videos oder Animationen).
+  
+- **Bildergalerie**:
+  - Ein horizontaler Slider, der mehrere Bilder zeigt.
+  - Nutzer können mit links/rechts-Pfeiltasten zwischen den Bildern navigieren.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Videogalerie**:
+  - Ein ähnlicher horizontaler Slider, der sich auf die Anzeige von Videos konzentriert.
+  - Jedes Video wird durch ein Thumbnail dargestellt, und die Nutzer können durch verschiedene Videos scrollen.
 
-### `npm run eject`
+- **Animationsabschnitt**:
+  - Ein eigener Abschnitt für Animationen, durch den man mit links/rechts-Pfeiltasten navigieren kann.
+  - Jede Animation wird in einer größeren, zentralen Ansicht dargestellt.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Klone das Repository:
+   ```bash
+   git clone https://github.com/deinbenutzername/hk-gallery.git
+   cd hk-gallery
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Installiere die Abhängigkeiten:
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Starte das Projekt lokal:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+## Verwendete Technologien
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React**: Für den Aufbau der interaktiven Benutzeroberfläche.
+- **CSS**: Für das Styling der Komponenten und die Erstellung von Animationen.
+- **JavaScript**: Für die Funktionalität der Bild-, Video- und Animationsgalerien.
+- **React Hooks**: Wie `useEffect` und `useRef` für Scroll- und Navigationslogik.
+  
+## Projektstruktur
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+.
+├── public
+│   └── index.html
+├── src
+│   ├── assets
+│   │   ├── images
+│   │   └── videos
+│   ├── components
+│   │   ├── ImageGallery.js
+│   │   ├── VideoGallery.js
+│   │   └── AnimationGallery.js
+│   ├── App.js
+│   ├── GalleryPage.js
+│   └── styles
+│       └── GalleryPage.css
+└── README.md
+```
 
-### Code Splitting
+## Nutzung
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Die **Startseite** enthält Navigationsoptionen zu den drei Hauptgalerien: Bilder, Videos und Animationen.
+- In jeder Galerie können die Nutzer horizontal scrollen, um mehr Elemente zu sehen.
+- Die Navigationspfeile in den Galerien ermöglichen es den Nutzern, zwischen den verschiedenen Medienelementen hin- und herzublättern.
 
-### Analyzing the Bundle Size
+## Zukünftige Verbesserungen
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Dynamische Inhalte**: Implementierung der Möglichkeit, Bilder, Videos und Animationen dynamisch von einem Backend abzurufen.
+- **Responsive Design**: Sicherstellen, dass die Website vollständig für mobile Geräte optimiert ist.
+- **Barrierefreiheit**: Verbesserung der Tastaturnavigation und Unterstützung für Screenreader.
