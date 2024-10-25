@@ -23,7 +23,8 @@ Das Wireframe bietet einen strukturierten visuellen Überblick über das Layout 
     - Nutzer können durch Videos scrollen, die als Video 1, Video 2 usw. gekennzeichnet sind.
 
 ### Wireframe-Bild
-![Wireframe](./assets/wireframe-image.jpg)
+![IMG_2404](https://github.com/user-attachments/assets/a70088de-888f-490a-8df1-02f482bbe51e)
+
 
 ## Funktionen
 
