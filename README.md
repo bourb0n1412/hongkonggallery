@@ -4,6 +4,12 @@
 
 Dieses Projekt ist eine webbasierte Galerie namens **HK Gallery**, die eine Sammlung von Bildern, Videos und Animationen zeigt. Das Layout ist in verschiedene Abschnitte unterteilt, die jeweils einen anderen Medientyp hervorheben. Die Website ermöglicht es den Nutzern, interaktiv durch Bild-, Video- und Animationsgalerien zu navigieren.
 
+## Projekt backlog
+[Projekt backlog](https://github.com/users/bourb0n1412/projects/2)
+
+## Dokumentation
+[Dokumentation](https://github.com/bourb0n1412/hongkonggallery/wiki)
+
 ## Wireframe-Übersicht
 
 Das Wireframe bietet einen strukturierten visuellen Überblick über das Layout der Website. Es enthält folgende Abschnitte:
