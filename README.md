@@ -1,5 +1,3 @@
-Hier ist dein detailliertes und kreatives `README.md`, erweitert mit zusätzlichen Informationen und Details, die dein Projekt auf ein neues Level heben:
-
 ---
 
 # 🎨 HK Gallery
