@@ -1,5 +1,3 @@
----
-
 # 🎨 HK Gallery
 
 **HK Gallery** ist eine immersive, webbasierte Galerie, die die vielfältige Kultur und Kreativität von Hongkong durch Bilder, Videos und Animationen präsentiert. Die Website lädt die Nutzer dazu ein, interaktiv durch eine visuelle Erlebniswelt zu navigieren, und bietet dabei eine intuitive und moderne Benutzeroberfläche.
