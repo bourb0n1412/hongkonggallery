@@ -41,7 +41,7 @@ Das Wireframe gibt einen visuellen Überblick über das Layout der Webseite und 
    - Die Nutzer können zwischen den Videos navigieren und sich die Inhalte direkt auf der Seite ansehen.
 
 ### Wireframe-Bild
-![Wireframe](./assets/wireframe-image.jpg)
+![Wireframe](https://github.com/user-attachments/assets/0336c206-0673-44df-8921-657b95fdf2ef)
 
 ## 🌟 Funktionen
 
