@@ -1,70 +1,69 @@
-/* GalleryPage.css */
-
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .gallery-container {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(to right, #1f2937, #1a202c, #1f2937);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow-x: auto;
-  position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #1f2937, #1a202c, #1f2937);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto; /* Scrollen horizontal aktivieren */
+    position: relative;
+    overflow-y: hidden; /* Vertikales Scrollen deaktivieren */
+    scrollbar-width: none; /* Versteckt Scrollbar in Firefox */
 }
 
-.gallery-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #f5f5f5;
-  margin-bottom: 2rem;
-  letter-spacing: 0.05em;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+.gallery-container::-webkit-scrollbar {
+    display: none; /* Versteckt Scrollbar in Webkit-Browsern */
 }
 
 .gallery {
-  display: flex;
-  gap: 2.5rem;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    display: flex;
+    gap: 2.5rem;
+    width: max-content; /* Sorgt dafür, dass die Breite sich an den Inhalt anpasst */
+    overflow: visible; /* Keine weiteren Einschränkungen */
 }
 
-.gallery::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Edge */
+.gallery-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
 }
 
 .gallery-item {
-  flex-shrink: 0;
-  width: auto;
-  transform: scale(1);
-  transition: transform 0.3s ease-out;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
-  overflow: hidden;
-  background: linear-gradient(to top left, #4b5563, #1f2937);
+    flex-shrink: 0; /* Verhindert, dass die Elemente schrumpfen */
+    width: 80vh; /* Feste Breite für gleichmäßige Darstellung */
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    background: linear-gradient(to top left, #4b5563, #1f2937);
 }
 
 .gallery-item:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .gallery-img {
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .gallery-info {
-  padding: 1.2rem;
-  text-align: center;
-  color: #f5f5f5;
-  font-size: 1.15rem;
+    padding: 1.2rem;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 1.15rem;
 }
+

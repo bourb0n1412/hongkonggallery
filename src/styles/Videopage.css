@@ -1,0 +1,38 @@
+.video-page-container {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+}
+
+.video-page-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.video-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-item {
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.video-player {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-info {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+}

@@ -1,0 +1,27 @@
+const imageData = {
+    "2.png": "ACGHK Anime Convention 2024",
+    "3.png": "Bluelock: The Ultimate Soccer Challenge",
+    "4.png": "Ambience of Hong Kong 1",
+    "5.png": "Ambience of Hong Kong 2",
+    "6.png": "Nina Hotel Tsuen Wan West",
+    "7.png": "Hong Kong Times Square",
+    "8.png": "Avenue of Stars - Bruce Lee Statue",
+    "9.png": "Victoria Peak View",
+    "10.png": "Night Market in Mong Kok",
+    "11.png": "Traditional Food Stall",
+    "12.png": "Street Art in Central Hong Kong",
+    "13.png": "Harbor View at Sunset",
+    "14.png": "Old Tram in Hong Kong",
+    "15.png": "Temple Street Night Market",
+    "16.png": "Modern Skyscrapers",
+    "17.png": "Kowloon Park Flamingos",
+    "18.png": "Repulse Bay Beach",
+    "19.png": "Lan Kwai Fong Nightlife",
+    "20.png": "Tai O Fishing Village",
+    "21.png": "Hong Kong Disneyland Entrance",
+    "22.png": "Dragon’s Back Hiking Trail",
+    "23.png": "Big Buddha on Lantau Island",
+    "24.png": "Hong Kong Skyline at Night",
+};
+
+export default imageData;
